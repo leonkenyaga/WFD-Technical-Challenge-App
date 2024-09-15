@@ -1,4 +1,5 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Designedby() {
   return (
@@ -10,7 +11,7 @@ export default function Designedby() {
         DESIGNED BY
       </h1>
       <figure className="pt-[7px] flex justify-center md:justify-end">
-        <img src="/Bitmap.png" className="h-[24px] w-[110px]" alt="Dreamshare desiner's logo"/>
+        <StaticImage src="../../images/Bitmap.png" alt="Dreamshare designer's logo" />
       </figure>
     </section>
   );
