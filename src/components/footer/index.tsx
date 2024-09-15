@@ -2,6 +2,7 @@ import * as React from "react";
 import Dreamshare from "./dreamshare";
 import About_Company from "./about-company";
 import Partners from "./partners";
+import Designedby from "./Designedby";
 
 export default function Footer() {
   return (
@@ -9,6 +10,7 @@ export default function Footer() {
       <Dreamshare />
       <About_Company />
       <Partners />
+      <Designedby />
     </footer>
   );
 }
