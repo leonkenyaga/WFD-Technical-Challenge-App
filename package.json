@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "test:unit": "jest --passWithNoTests",
+    "test:unit:coverage": "npm run test:unit -- --coverage",
+    "test:unit:watch": "npm run test:unit -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -13,7 +16,14 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource-variable/montserrat": "^5.1.0",
+    "@fontsource/roboto": "^5.1.0",
     "gatsby": "^5.13.7",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,5 +33,18 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.13",
+    "autoprefixer": "^10.4.20",
+    "babel-jest": "^29.7.0",
+    "babel-preset-gatsby": "^3.13.2",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.11"
   }
 }
