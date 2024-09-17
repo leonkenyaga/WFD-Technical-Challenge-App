@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "test:unit": "jest --passWithNoTests",
+    "test:unit:coverage": "npm run test:unit -- --coverage",
+    "test:unit:watch": "npm run test:unit -- --watch",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
