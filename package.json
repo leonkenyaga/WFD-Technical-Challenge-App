@@ -19,10 +19,12 @@
     "@fontsource-variable/montserrat": "^5.1.0",
     "@fontsource/roboto": "^5.1.0",
     "gatsby": "^5.13.7",
+    "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "gbimage-bridge": "^0.2.2",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
