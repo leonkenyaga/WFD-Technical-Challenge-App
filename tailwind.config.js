@@ -8,13 +8,19 @@ module.exports = {
     fontSize: {
       xs: ['10px', '12.19px'],
       ms: ['14px', '26px'],
+      medium: ['18px', '24.5px'],
       sm: ['14px', '17.07px'],
       base: ['16px', '19.5px'],
-      lg: ['20px', '28px'],
-      xl: ['24px', '32px'],
+      lg: ['20px', '24.38px'],
+      xl: ['24px', '24.5px'],
+      xxl: ['30px', '36.57px'],
+      xxxl: ['52px', '63.39px'],
     },
     colors: {
+      'white':'#FFFFFF',
+      'daisy':'#F7F3F2',
       'red':'#FF4E50',
+      'carmine':'#FF1E50',
       'black':'#444444',
       'grey':'#CCCCCC',
       'darkgrey':'#999999'
