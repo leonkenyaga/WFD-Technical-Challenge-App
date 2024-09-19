@@ -12,6 +12,7 @@ module.exports = {
       sm: ['14px', '17.07px'],
       base: ['16px', '19.5px'],
       lg: ['20px', '24.38px'],
+      mg: ['22px', '26.82px'],
       xl: ['24px', '24.5px'],
       xxl: ['30px', '36.57px'],
       xxxl: ['52px', '63.39px'],
