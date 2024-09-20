@@ -2,7 +2,7 @@ import * as React from "react";
 import Dreamshare from "../dreamshare_login_signup/dreamshare";
 import ShareHolidayMessage from "./share_holiday_message";
 import FindPartnerMessage from "./find_partner_message";
-import FindPartnerButton from "./find_partner_button";
+import DreamshareButton from "../../shared_components/dreamsharebutton";
 
 export default function ShareHoliday() {
   return (
@@ -12,7 +12,11 @@ export default function ShareHoliday() {
       </div>
       <ShareHolidayMessage />
       <FindPartnerMessage />
-      <FindPartnerButton />
+      <div className="flex justify-center mt-[20px] md:mt-[33px]">
+      <div>
+        <DreamshareButton filled={true}>Find your holiday partner</DreamshareButton>
+      </div>
+    </div>
     </section>
   );
 }
