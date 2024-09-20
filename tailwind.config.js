@@ -24,6 +24,7 @@ module.exports = {
       'carmine':'#FF1E50',
       'black':'#444444',
       'grey':'#CCCCCC',
+      'mediumgrey':'#666666',
       'darkgrey':'#999999'
     },
     extend: {},

@@ -9,7 +9,7 @@ export default function Movie(props) {
       <MovieName name={props.details.movieName} />
       <MovieImage
         image={props.details.movieImage.gatsbyImageData}
-        alt={props.movieName}
+        alt={props.details.movieName}
       />
       <MovieDescription description={props.details.movieDescription} />
     </article>
