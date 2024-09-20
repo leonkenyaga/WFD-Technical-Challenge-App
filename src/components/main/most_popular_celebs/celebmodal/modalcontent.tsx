@@ -4,7 +4,7 @@ import { useAllContentfulCelebrities } from "../../../../hooks/useAllContentfulC
 
 export default function ModalContent() {
   return (
-    <section className="pt-[60px] overflow-auto h-full grid md:grid-cols-2 gap-[30px] grid-cols-1 justify-items-center">
+    <section className="py-[60px] overflow-auto h-full grid md:grid-cols-2 gap-[30px] grid-cols-1 justify-items-center">
       {useAllContentfulCelebrities().allContentfulCelebrity.edges.map(
         (edge) => (
           <CelebProfile details={edge.node} />

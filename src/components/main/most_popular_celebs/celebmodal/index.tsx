@@ -39,8 +39,7 @@ export default function CelebModal() {
           className="bg-white fixed bottom-0 left-0 right-0 pt-[15px] shadow-lg px-4"
         >
           <DreamshareButton filled={true} onClick={handleModal}>
-            {" "}
-            Close{" "}
+            Close
           </DreamshareButton>
         </div>
       </Box>
