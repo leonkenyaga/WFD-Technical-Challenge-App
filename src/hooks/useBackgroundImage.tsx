@@ -11,6 +11,7 @@ export const useBackgroundImage = () => {
             width: 2000
             quality: 50
             webpOptions: { quality: 70 }
+            placeholder: BLURRED
           )
         }
       }
