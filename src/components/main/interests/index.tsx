@@ -1,5 +1,6 @@
 import * as React from "react";
 import SectionTitle from "../../shared_components/sectiontitle";
+import InterestStatement from "./intereststatement";
 
 export default function Interests() {
   return (
@@ -7,6 +8,7 @@ export default function Interests() {
       <div className="max-sm:w-full px-[35px] flex text-center items-center">
         <SectionTitle>Create your holiday activity</SectionTitle>
       </div>
+      <InterestStatement />
     </section>
   );
 }
