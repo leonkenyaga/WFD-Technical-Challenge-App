@@ -14,7 +14,7 @@ export default function ShareHoliday() {
       <FindPartnerMessage />
       <div className="flex justify-center mt-[20px] md:mt-[33px]">
       <div>
-        <DreamshareButton filled={true}>Find your holiday partner</DreamshareButton>
+        <DreamshareButton filled={true} type="button">Find your holiday partner</DreamshareButton>
       </div>
     </div>
     </section>

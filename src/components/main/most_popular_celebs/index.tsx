@@ -21,7 +21,7 @@ export default function MostPopularCelebs() {
       )}
       <div className="w-full flex justify-center">
         <div>
-          <DreamshareButton onClick={handleModal}>
+          <DreamshareButton onClick={handleModal} type="button">
             See other celebs
           </DreamshareButton>
         </div>
