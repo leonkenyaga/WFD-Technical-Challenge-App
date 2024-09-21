@@ -26,7 +26,7 @@ export default function MostPopularMovies() {
           ))}
       <div className="w-full flex justify-center">
         <div>
-          <DreamshareButton onClick={handleClick}>
+          <DreamshareButton onClick={handleClick} type="button">
             {isLoadingMore.state ? "Load less" : "Load more"}
           </DreamshareButton>
         </div>
