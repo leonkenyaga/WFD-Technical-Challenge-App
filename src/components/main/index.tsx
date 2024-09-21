@@ -2,6 +2,7 @@ import * as React from "react";
 import MostPopularMovies from "./most_popular_movies";
 import MostPopularCelebs from "./most_popular_celebs";
 import Ideas from "./ideas";
+import Interests from "./interests";
 
 export default function Main() {
   return (
@@ -9,6 +10,7 @@ export default function Main() {
       <MostPopularMovies />
       <MostPopularCelebs />
       <Ideas />
+      <Interests />
     </main>
   );
 }
