@@ -16,6 +16,7 @@ export default function Idea(props) {
     if (!element) {
       return;
     }
+    if (!window.IntersectionObserver) return
 
     const observer = new IntersectionObserver(
       (entries) => {
