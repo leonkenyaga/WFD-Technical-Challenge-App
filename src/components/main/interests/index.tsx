@@ -1,5 +1,6 @@
 import * as React from "react";
 import SectionTitle from "../../shared_components/sectiontitle";
+import SearchPartners from "./searchpartners";
 import InterestStatement from "./intereststatement";
 
 export default function Interests() {
@@ -9,6 +10,7 @@ export default function Interests() {
         <SectionTitle>Create your holiday activity</SectionTitle>
       </div>
       <InterestStatement />
+      <SearchPartners />
     </section>
   );
 }
