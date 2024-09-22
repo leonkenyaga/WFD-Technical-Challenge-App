@@ -8,6 +8,13 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    title: `Discover Your Dream Holiday on DreamShare`,
+    description: `DreamShare is the ultimate platform to connect with like-minded travelers and turn your dream vacation into reality. Find your perfect travel partner, discover exciting destinations, and create unforgettable memories together. Explore our curated selection of popular movies and celebrities to inspire your next adventure`,
+    twitterUsername: `@DreamShare`,
+    image: `/Bitmap.png`,
+    siteUrl: `https://www.dreamshare.com`
+  },
   plugins: [
     "gatsby-plugin-testing",
     'gatsby-plugin-postcss',

@@ -2,6 +2,7 @@ import * as React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Main from "../components/main";
+import { Seo } from "../components/seo";
 
 export default function Home() {
 
@@ -13,3 +14,7 @@ export default function Home() {
     </div>
   );
 }
+
+export const Head = () => (
+  <Seo title={undefined} description={undefined} pathname={undefined} children={undefined} />
+)
