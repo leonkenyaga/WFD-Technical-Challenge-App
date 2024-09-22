@@ -22,6 +22,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GTM_ID,
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
