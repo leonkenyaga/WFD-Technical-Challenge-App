@@ -15,7 +15,7 @@ export default function Ideas() {
         imgUrl="https://images.ctfassets.net/wqi5si2lylwp/7G7avaW9Q5s9Hv3psqrfEQ/09e2bfc58bfa79943850f0242c27e0d9/Bitmap_4_.png"
       />
       <Idea
-        idea="Extreme Sports and Expedictions"
+        idea="Extreme Sports"
         imgUrl="https://images.ctfassets.net/wqi5si2lylwp/2MWk5Un2q6wvxSCpiHe1v3/8c3732fc53c618eabfaf57028d9d772d/Bitmap_5_.png"
       />
       <Idea

@@ -14,6 +14,7 @@ export default function Header() {
         {...bgImage}
         preserveStackingContext
         className="h-full"
+        fadeIn="none"
       >
         <Dreamshare_login_signup />
         <ShareHoliday />

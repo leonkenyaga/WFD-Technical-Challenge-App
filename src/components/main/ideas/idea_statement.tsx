@@ -4,7 +4,7 @@ export default function IdeaStatement(props) {
   return (
     <h3
       style={{ fontFamily: "Montserrat Variable" }}
-      className="w-full flex justify-center mb-[20px] font-bold text:mg text-grey"
+      className="w-full flex justify-center mb-[20px] font-bold text:mg"
     >
       {props.children}
     </h3>

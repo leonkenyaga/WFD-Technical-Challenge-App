@@ -6,7 +6,7 @@ export default function Designedby() {
     <section className="w-[280px] md:w-[114px]">
       <h1
         style={{ fontFamily: "Montserrat Variable" }}
-        className="text-grey text-xs font-bold flex justify-center md:justify-end"
+        className="text-xs font-bold flex justify-center md:justify-end"
       >
         DESIGNED BY
       </h1>
