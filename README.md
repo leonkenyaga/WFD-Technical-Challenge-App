@@ -29,5 +29,40 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 [content delivery api key]: https://www.contentful.com/developers/docs/references/authentication/#api-keys-in-the-contentful-web-app
 [content management api key]: https://www.contentful.com/developers/docs/references/authentication/#the-content-management-api
 
+1. **Create a Gatsby site**
+
+   Use the Gatsby CLI to get started locally:
+
+   ```sh repo
+   npx gatsby new my-app https://github.com/leonkenyaga/WFD-Technical-Challenge-App.git
+   ```
+
+   if you dont already have Gatsby CLI installed:
+
+   ```
+   npm install -g gatsby-cli
+   ```
+   
+
+1. **Run the Contentful setup script**
+
+   From your site's root directory, run:
+
+   ```sh
+   cd my-app
+   ```
+
+   This will run a script to populate your Contentful space's content model and add demo content.
+
+1. **Start developing**
+
+   In your site directory, start the development server:
+
+   ```sh
+   gatsby develop
+   ```
+
+   Your site should now be running at <http://localhost:8000>
+
 
 
