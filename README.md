@@ -5,6 +5,10 @@ This project is a demonstration project showcasing the seamless integration betw
 
 **Highlight performance advantages**: The project emphasizes the performance benefits of using Gatsby.js for static site generation. By pre-rendering content at build time, delivers a fast and smooth user experience.
 
+## Table of Contents
+
+* [Architecture](#architecture)
+
 ## Architecture
 
 **Framework**:Gatsby.js is used as the static site generator. Gatsby leverages React components for building the UI and utilizes GraphQL for data fetching.
