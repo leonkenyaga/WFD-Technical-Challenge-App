@@ -169,3 +169,66 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 │   ├── README.md
 │   ├── tailwind.config.js
 ```
+## Components
+
+**Header**
+
+*Desktop View*
+
+![HeaderComponent](https://github.com/user-attachments/assets/68f5a8cd-5d50-45b0-9309-63224fc9c4fc)
+
+*Tablet View*
+
+![HeaderComponentTablet](https://github.com/user-attachments/assets/d7f1b404-f025-488e-8b07-d51dcf83d14d)
+
+*Mobile View*
+
+![HeaderComponentTablet](https://github.com/user-attachments/assets/b6d94a1f-c0dd-4ad3-95d0-68d55a7376ff)
+
+**Most Popular Movies**
+
+*Desktop view*
+
+![MoviesTablet](https://github.com/user-attachments/assets/e7877d4c-1468-4992-ae43-54d49e51b91d)
+
+
+
+*Tablet View*
+
+![MoviesTablet](https://github.com/user-attachments/assets/5e1c52b7-2c83-47ee-92ae-63fcca35e4e3)
+
+
+
+*Mobile View*
+
+![MoviesMobile1](https://github.com/user-attachments/assets/18569bf7-e025-406e-8d69-fcbbf30af121)
+
+
+**Most Popular Celebs**
+
+*Mobile View*
+![CelebsMobile](https://github.com/user-attachments/assets/c81db744-0da4-4d7c-9f74-ec7cfa869f44)
+
+
+
+*Tablet View*
+![CelebsTablet](https://github.com/user-attachments/assets/b26556d1-2444-477a-b6df-cae6db2a5943)
+
+
+
+*Desktop View*
+
+![CelebsDesktop](https://github.com/user-attachments/assets/5a34963e-cb37-48c8-9a7c-56a7a761f2f2)
+
+
+
+**Celeb Modal**
+
+*Mobile View*
+![CelebsMobile](https://github.com/user-attachments/assets/10cf79b8-88ec-4605-a93f-45a7bef6ce59)
+
+
+*Tablet View*
+
+
+
