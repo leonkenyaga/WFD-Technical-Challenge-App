@@ -277,15 +277,15 @@ The ```MostPopularCelebs``` component has the following subcomponents:
 
 1. *Celeb Profile* : It takes the following props:
     
--```image```: Has to be in the format of IGatsbyImageData
+- ```image```: Has to be in the format of IGatsbyImageData
     
 - ```name```: text that signifies the name of the celeb
     
--```description```: text that signifies the description of the celeb
+- ```description```: text that signifies the description of the celeb
 
--```icon```: text that signifies the icon of the celeb
+- ```icon```: text that signifies the icon of the celeb
 
--```iconColor```: text that signifies the icon color of the celeb
+- ```iconColor```: text that signifies the icon color of the celeb
     
  2. A "See more celebs" button using ```DreamshareButton``` that triggers the rendering of the ```CelebModal``` component             
 
@@ -312,7 +312,9 @@ The ```MostPopularCelebs``` component has the following subcomponents:
 The ```CelebModal``` component has the following subcomponents:
 
 1. *SectionTitle* : The ```SectionTitle``` button component is a shared component among other components in the project. Use it to wrap text you wish to use as the title         of a section.
+
 2. The ```CelebProfile``` component which is used for display celeb data
+
 3. A "close" button using ```DreamshareButton``` component that closes the modal
 
 *Mobile View*
