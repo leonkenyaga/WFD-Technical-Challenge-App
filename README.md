@@ -44,9 +44,7 @@ You will need a new or existing [Contentful space][] to use this starter and wil
    ```
    
 
-1. **Run the Contentful setup script**
-
-   From your site's root directory, run:
+1. **Change directory**
 
    ```sh
    cd my-app
