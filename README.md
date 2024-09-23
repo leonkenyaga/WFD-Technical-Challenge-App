@@ -188,7 +188,7 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 **Header**
 The ```Header``` component includes the following sub-components:
 
-1. ```BackgroundImage```: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to IGatsbyImageData into background image format.
+1. ```BackgroundImage```: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to ```IGatsbyImageData``` into background image format.
 
 ```
 import { useStaticQuery, graphql } from "gatsby";
@@ -247,7 +247,7 @@ Then pass the image into the BackgroundImage component:
 The ```MostPopularMovies``` component has the following subcomponents:
 1. *Movie* : It takes the following props:
     
-- ```image```: Has to be in the format of IGatsbyImageData
+- ```image```: Has to be in the format of ```IGatsbyImageData```
     
 - ```name```: text that signifies the name of the movie
     
@@ -277,7 +277,7 @@ The ```MostPopularCelebs``` component has the following subcomponents:
 
 1. *Celeb Profile* : It takes the following props:
     
-- ```image```: Has to be in the format of IGatsbyImageData
+- ```image```: Has to be in the format of ```IGatsbyImageData```
     
 - ```name```: text that signifies the name of the celeb
     
@@ -339,9 +339,9 @@ The ```Ideas``` component has the following subcomponents:
 
 1. *Idea* : The ```Idea``` component takes the following props:
     
--```idea```: name of the idea
+- ```idea```: name of the idea
 
--```imgUrl```: url as the source of the background image for the idea pitch
+- ```imgUrl```: url as the source of the background image for the idea pitch
 
 *Mobile View*
 
@@ -387,9 +387,9 @@ The ```Ideas``` component has the following subcomponents:
 
 To fetch data from the Contentful GraphQL API. First you have to set up a data schema. For example the project's ```ContentfulMovie``` Schema comprises of:
 
-- movieName
-- movieImage
-- movieDescription
+- movieName: ```text```
+- movieImage: ```image```
+- movieDescription: ```text```
 
 Then use Gatsby's GraphiQL IDE at endpoint ```http://localhost:8000/___graphql``` to formulate your queries and fetch data. For example fetching data ```ContentfulMovie``` data:
 
