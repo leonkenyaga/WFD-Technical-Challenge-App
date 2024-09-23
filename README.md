@@ -172,6 +172,50 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ## Components
 
 **Header**
+The ```Header``` component includes the following sub-components:
+
+1. *BackgroundImage*: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to IGatsbyImageData into background image format.
+
+```
+import { useStaticQuery, graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
+import { convertToBgImage } from "gbimage-bridge";
+
+export const useBackgroundImage = () => {
+  const { backgroundImage123 } = useStaticQuery(graphql`
+    query {
+      backgroundImage123: file(relativePath: { eq: "Hero2.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 2000
+            quality: 50
+            webpOptions: { quality: 70 }
+            placeholder: BLURRED
+          )
+        }
+      }
+    }
+  `);
+
+  const image = getImage(backgroundImage123);
+
+  const bgImage = convertToBgImage(image);
+
+  return bgImage;
+};
+
+```
+Ten pass the image into the BackgroundImage component:
+```
+      <BackgroundImage {...bgImage} > Content goes here </BackgroundImage>
+```
+2. *DreamshareButton* : The ```DreamshareButton``` component is a shared component among other components in the project. It takes the following props:
+ 
+        *```type```: this dictates the type of the button e.g "submit"
+     
+        *```onClick```: this dictates the function that executes when the button is clicked
+   
+        *```childeren```: use the button to wrap text that you wish to display in the button
 
 *Desktop View*
 
@@ -186,6 +230,16 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ![HeaderComponentTablet](https://github.com/user-attachments/assets/b6d94a1f-c0dd-4ad3-95d0-68d55a7376ff)
 
 **Most Popular Movies**
+The ```MostPopularMovies``` component has the following subcomponents:
+ 1. *Movie* : It takes the following props:
+    
+           *```image```: Has to be in the format of IGatsbyImageData
+    
+           *```name```: text that signifies the name of the movie
+    
+           *```description```: text that signifies the description of the movie
+    
+  2. A "Loadmore" button using ```DreamshareButton``` that triggers rendering of more movies   
 
 *Desktop view*
 
@@ -205,6 +259,21 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 
 
 **Most Popular Celebs**
+The ```MostPopularCelebs``` component has the following subcomponents:
+
+ 1. *Celeb Profile* : It takes the following props:
+    
+           *```image```: Has to be in the format of IGatsbyImageData
+    
+           *```name```: text that signifies the name of the celeb
+    
+           *```description```: text that signifies the description of the celeb
+
+           *```icon```: text that signifies the icon of the celeb
+
+           *```iconColor```: text that signifies the icon color of the celeb
+    
+ 2. A "See more celebs" button using ```DreamshareButton``` that triggers the rendering of the ```CelebModal``` component             
 
 *Mobile View*
 
@@ -226,6 +295,12 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 
 **Celeb Modal**
 
+The ```CelebModal``` component has the following subcomponents:
+
+   1. *SectionTitle* : The ```SectionTitle``` button component is a shared component among other components in the project. Use it to wrap text you wish to use as the title         of a section.
+   2. The ```CelebProfile``` component which is used for display celeb data
+   3. A "close" button using ```DreamshareButton``` component that closes the modal
+
 *Mobile View*
 
 ![ModalMobile](https://github.com/user-attachments/assets/3901cd56-28f6-4c24-babf-79fde0b87e28)
@@ -244,6 +319,14 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 
 **Ideas**
 
+The ```Ideas``` component has the following subcomponents:
+
+   1. *Idea* : The ```Idea``` button component takes the following props:
+    
+             *```idea```: name of the idea
+
+             *```imgUrl```: url as the source of the background image for the idea pitch
+
 *Mobile View*
 
 ![IdeasMobileView](https://github.com/user-attachments/assets/e2cdb581-f099-4679-9537-26c9f479140d)
@@ -261,7 +344,12 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ![IdeasDesktopView](https://github.com/user-attachments/assets/1f31704c-a800-4f8f-80d1-45b9865de188)
 
 
-**Interests and Footer**
+**Interests**
+The ```Ideas``` component has the following subcomponents:
+
+   1. An ```input``` field
+ 
+   2. A "Search partners" button using ```DreamshareButton``` component that submits the input value
 
 *Mobile View*
 
@@ -279,3 +367,120 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ![InterestsDesktopView](https://github.com/user-attachments/assets/85da9db3-eb69-4237-99c6-e8ced43a297e)
 
 
+## Data Fetching
+
+To fetch data from the Contentful GraphQL API. First you have to set up a data schema. For example the project's ```ContentfulMovie``` Schema comprises of:
+
+*movieName
+*movieImage
+*movieDescription
+
+Then use Gatsby's GraphiQL IDE at endpoint ```http://localhost:8000/___graphql``` to formulate your queries and fetch data. For example fetching data ```ContentfulMovie``` data:
+
+```
+import { useStaticQuery, graphql } from "gatsby";
+
+export const useAllContentfulMovies = () => {
+  const contentfulMovies = useStaticQuery(graphql`
+    {
+      allContentfulMovie {
+        edges {
+          node {
+            movieName
+            movieImage {
+              gatsbyImageData(
+                width: 300
+                placeholder: BLURRED
+                cropFocus: CENTER
+                aspectRatio: 0.7
+              )
+            }
+            movieDescription
+          }
+        }
+      }
+    }
+  `);
+
+  return contentfulMovies;
+};
+
+```
+Fetching with limits. e.g the first three entries:
+
+```
+import { useStaticQuery, graphql } from "gatsby";
+
+export const useInitialContentfulMovies = () => {
+  const contentfulMovies = useStaticQuery(graphql`
+    {
+      allContentfulMovie(limit: 3) {
+        edges {
+          node {
+            movieName
+            movieImage {
+              gatsbyImageData(
+                width: 300
+                placeholder: BLURRED
+                cropFocus: CENTER
+                aspectRatio: 0.7
+              )
+            }
+            movieDescription
+          }
+        }
+      }
+    }
+  `);
+
+  return contentfulMovies;
+};
+
+```
+
+## Testing
+
+**Testing Queries**
+
+To test if you componets queries and renders correctly you need ```gatsby-plugin-testing``` which records your query results and stores it into a snapshot. Also you need ```react-test-renderer``` which checks the if the data is rendered correctly. 
+
+
+```
+import React from 'react'
+import MostPopularMovies from '../../../main/most_popular_movies'
+import renderer from "react-test-renderer"
+
+
+
+describe("MostPopularMovies", () => {
+    it("Queries and renders correctly", () => {
+      const tree = renderer
+        .create(<MostPopularMovies />)
+        .toJSON()
+  
+        expect(tree).toMatchSnapshot()
+    })
+  })
+```
+To test if you components render correctly you need ```@testing-library/react```. Testing e.g if component renders without crashing is as follows:
+
+```
+import React from 'react'
+import MostPopularMovies from '../../../main/most_popular_movies'
+import renderer from "react-test-renderer"
+
+describe('MostPopularMovies', () => {
+   test('Should render without crash', async () => {
+      render(<MostPopularMovies />)
+   })
+})
+
+```
+To run the projects unit tests: ```npm run test:unit```
+To get test coverage: ```npm run test:unit:coverage```
+
+## Deployment
+
+Run ```gatsby build ```. The build version of the application will be in the ```public``` folder. Deploy the public folder to netlify by dragging and dropping.
+
+## Optimization
