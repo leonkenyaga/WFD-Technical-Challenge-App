@@ -188,7 +188,7 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 **Header**
 The ```Header``` component includes the following sub-components:
 
-1. *BackgroundImage*: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to IGatsbyImageData into background image format.
+1. ```BackgroundImage```: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to IGatsbyImageData into background image format.
 
 ```
 import { useStaticQuery, graphql } from "gatsby";
@@ -219,17 +219,17 @@ export const useBackgroundImage = () => {
 };
 
 ```
-Ten pass the image into the BackgroundImage component:
+Then pass the image into the BackgroundImage component:
 ```
-      <BackgroundImage {...bgImage} > Content goes here </BackgroundImage>
+<BackgroundImage {...bgImage} > Content goes here </BackgroundImage>
 ```
 2. *DreamshareButton* : The ```DreamshareButton``` component is a shared component among other components in the project. It takes the following props:
  
-        *type: this dictates the type of the button e.g "submit"
+- ```type```: this dictates the type of the button e.g "submit"
      
-        *onClick: this dictates the function that executes when the button is clicked
+- ```onClick```: this dictates the function that executes when the button is clicked
    
-        *children: use the button to wrap text that you wish to display in the button
+- ```children```: use the button to wrap text that you wish to display in the button
 
 *Desktop View*
 
@@ -245,15 +245,15 @@ Ten pass the image into the BackgroundImage component:
 
 **Most Popular Movies**
 The ```MostPopularMovies``` component has the following subcomponents:
- 1. *Movie* : It takes the following props:
+1. *Movie* : It takes the following props:
     
-           *image: Has to be in the format of IGatsbyImageData
+- ```image```: Has to be in the format of IGatsbyImageData
     
-           *name: text that signifies the name of the movie
+- ```name```: text that signifies the name of the movie
     
-           *description: text that signifies the description of the movie
-    
-  2. A "Loadmore" button using ```DreamshareButton``` that triggers rendering of more movies   
+- ```description```: text that signifies the description of the movie
+
+2. A "Loadmore" button using ```DreamshareButton``` that triggers rendering of more movies   
 
 *Desktop view*
 
@@ -275,17 +275,17 @@ The ```MostPopularMovies``` component has the following subcomponents:
 **Most Popular Celebs**
 The ```MostPopularCelebs``` component has the following subcomponents:
 
- 1. *Celeb Profile* : It takes the following props:
+1. *Celeb Profile* : It takes the following props:
     
-           *image: Has to be in the format of IGatsbyImageData
+-```image```: Has to be in the format of IGatsbyImageData
     
-           *name: text that signifies the name of the celeb
+- ```name```: text that signifies the name of the celeb
     
-           *description: text that signifies the description of the celeb
+-```description```: text that signifies the description of the celeb
 
-           *icon: text that signifies the icon of the celeb
+-```icon```: text that signifies the icon of the celeb
 
-           *iconColor: text that signifies the icon color of the celeb
+-```iconColor```: text that signifies the icon color of the celeb
     
  2. A "See more celebs" button using ```DreamshareButton``` that triggers the rendering of the ```CelebModal``` component             
 
@@ -311,9 +311,9 @@ The ```MostPopularCelebs``` component has the following subcomponents:
 
 The ```CelebModal``` component has the following subcomponents:
 
-   1. *SectionTitle* : The ```SectionTitle``` button component is a shared component among other components in the project. Use it to wrap text you wish to use as the title         of a section.
-   2. The ```CelebProfile``` component which is used for display celeb data
-   3. A "close" button using ```DreamshareButton``` component that closes the modal
+1. *SectionTitle* : The ```SectionTitle``` button component is a shared component among other components in the project. Use it to wrap text you wish to use as the title         of a section.
+2. The ```CelebProfile``` component which is used for display celeb data
+3. A "close" button using ```DreamshareButton``` component that closes the modal
 
 *Mobile View*
 
@@ -337,9 +337,9 @@ The ```Ideas``` component has the following subcomponents:
 
 1. *Idea* : The ```Idea``` component takes the following props:
     
-- ```idea```: name of the idea
+-```idea```: name of the idea
 
-- ```imgUrl```: url as the source of the background image for the idea pitch
+-```imgUrl```: url as the source of the background image for the idea pitch
 
 *Mobile View*
 
@@ -361,9 +361,9 @@ The ```Ideas``` component has the following subcomponents:
 **Interests**
 The ```Ideas``` component has the following subcomponents:
 
-   1. An ```input``` field
+1. An ```input``` field
  
-   2. A "Search partners" button using ```DreamshareButton``` component that submits the input value
+2. A "Search partners" button using ```DreamshareButton``` component that submits the input value
 
 *Mobile View*
 
@@ -385,9 +385,9 @@ The ```Ideas``` component has the following subcomponents:
 
 To fetch data from the Contentful GraphQL API. First you have to set up a data schema. For example the project's ```ContentfulMovie``` Schema comprises of:
 
-*movieName
-*movieImage
-*movieDescription
+- movieName
+- movieImage
+- movieDescription
 
 Then use Gatsby's GraphiQL IDE at endpoint ```http://localhost:8000/___graphql``` to formulate your queries and fetch data. For example fetching data ```ContentfulMovie``` data:
 
