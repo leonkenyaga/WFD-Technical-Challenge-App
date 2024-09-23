@@ -8,6 +8,7 @@ This project is a demonstration project showcasing the seamless integration betw
 ## Table of Contents
 
 * [Architecture](#architecture)
+* [Quickstart](#quickstart)
 
 ## Architecture
 
