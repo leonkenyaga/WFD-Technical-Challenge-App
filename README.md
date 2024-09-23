@@ -63,6 +63,7 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 
 ## File Structure
 
+```
 ├── .cache
 ├── coverage
 ├── public
@@ -108,3 +109,4 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 │       └── volt.scss
 └── yarn.lock
 
+```
