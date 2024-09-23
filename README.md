@@ -23,7 +23,7 @@ This project is a demonstration project showcasing the seamless integration betw
 - React
 - Gatsby
 - Contentful Headless CMS
-
+- GraphQL
 ## Architecture
 
 **Framework**:Gatsby.js is used as the static site generator. Gatsby leverages React components for building the UI and utilizes GraphQL for data fetching.
