@@ -70,43 +70,102 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ├── src
 │   ├── components
 │   │   ├── __tests__
-│   │   ├── Charts.js
-│   │   ├── Code.js
-│   │   ├── CodeEditor.js
-│   │   ├── Documentation.js
-│   │   ├── Footer.js
-│   │   ├── Forms.js
-│   │   ├── Navbar.js
-│   │   ├── Preloader.js
-│   │   ├── Progress.js
-│   │   ├── ScrollToTop.js
-│   │   ├── Sidebar.js
-│   │   ├── Tables.js
-│   │   └── Widgets.js
-│   ├── data
-│   │   ├── charts.js
-│   │   ├── commands.js
-│   │   ├── features.js
-│   │   ├── notifications.js
-│   │   ├── pages.js
-│   │   ├── tables.js
-│   │   ├── teamMembers.js
-│   │   └── transactions.js
-│   ├── index.js
+|   |   |   ├──footer
+|   |   |   |  ├── index.test.tsx
+|   |   |   ├──header
+|   |   |   |  ├── dreamshare_login_signup.test.tsx
+|   |   |   |  ├── share_holiday.test.tsx
+|   |   |   ├──main
+|   |   |   |  ├── ideas
+|   |   |   |  |   ├── index.test.tsx
+|   |   |   |  ├── interests
+|   |   |   |  |   ├── index.test.tsx
+|   |   |   |  ├── most_popular_celebs
+|   |   |   |  |   ├── index.test.tsx
+|   |   |   |  ├── most_popular_movies
+|   |   |   |  |   ├── index.test.tsx
+|   |   ├──footer
+|   |   |  ├── about_company
+|   |   |  |   ├── index.tsx
+|   |   |  |   ├── about.tsx
+|   |   |  ├── designedby.tsx
+|   |   |  ├── dreamshare.tsx
+|   |   |  ├── index.tsx
+|   |   |  ├── partners.tsx
+|   |   ├──header
+|   |   |  ├── dreamshare_login_signup
+|   |   |  |   ├── login_signup
+|   |   |  |   |   ├── index.tsx
+|   |   |  |   |   ├── login.tsx
+|   |   |  |   |   ├── signup.tsx
+|   |   |  |   ├── dreamshare.tsx
+|   |   |  |   ├── index.tsx
+|   |   |  ├── share_holiday
+|   |   |  |   ├── find_partner_message.tsx
+|   |   |  |   ├── index.tsx
+|   |   |  |   ├── share_holiday_message.tsx
+|   |   |  ├── index.tsx
+|   |   ├──main
+|   |   |  ├── ideas
+|   |   |  |   ├── idea_statement.tsx
+|   |   |  |   ├── idea.tsx
+|   |   |  |   ├── index.tsx
+|   |   |  ├── interests
+|   |   |  |   ├── intereststatement.tsx
+|   |   |  |   ├── searchpartners.tsx
+|   |   |  |   ├── index.tsx
+|   |   |  ├── most_popular_celebs
+|   |   |  |   ├── celeb_profile
+|   |   |  |   |   ├── celeb_description.tsx
+|   |   |  |   |   ├── celeb_icon.tsx
+|   |   |  |   |   ├── celeb_image.tsx
+|   |   |  |   |   ├── celeb_name.tsx
+|   |   |  |   |   ├── index.tsx
+|   |   |  |   ├── celeb_modal
+|   |   |  |   |   ├── index.tsx
+|   |   |  |   |   ├── modalcontent.tsx
+|   |   |  |   |   ├── modaltitle.tsx
+|   |   |  |   ├── index.tsx
+|   |   |  ├── most_popular_movies
+|   |   |  |   ├── movie
+|   |   |  |   |   ├── movie_description.tsx
+|   |   |  |   |   ├── movie_image.tsx
+|   |   |  |   |   ├── movie_name.tsx
+|   |   |  |   |   ├── index.tsx
+|   |   |  ├── index.tsx
+|   |   ├──share_components
+|   |   |  ├── dreamsharebutton.tsx
+|   |   |  ├── sectiontittle.tsx
+|   |   ├──seo.tsx
+│   ├── hooks
+|   |   ├──useAllContentfulMovies.tsx
+│   │   ├──useAllContentfulCelebrities.tsx
+│   │   ├──useBackgroundImage.tsx
+|   |   ├──useInitialContentfulMovies.tsx
+│   │   ├──useInitialContentfulCelebrities.tsx
+|   |   ├──useSiteMetadata.tsx
 │   ├── pages
-│   │   ├── HomePage.js
-│   │   ├── Presentation.js
-│   │   ├── Settings.js
-│   │   ├── Transactions.js
-│   │   ├── components
-│   │   ├── dashboard
-│   │   ├── documentation
-│   │   ├── examples
-│   │   └── tables
-│   ├── routes.js
-│   └── scss
-│       ├── volt
-│       └── volt.scss
-└── yarn.lock
-
+|   |   ├──index.tsx
+│   ├── state
+|   |   ├──store.tsx
+│   ├── styles
+|   |   ├──global.css
+│   ├── static
+│   ├── tests
+│   │   ├── __mocks__
+│   │   |  ├── file-mock.js
+│   │   |  ├── gatsby-plugin-image.js
+│   │   |  ├── gatsby.js
+│   │   ├──jest-preprocess.js
+│   │   ├──loadershim.js
+│   ├── .gitignore
+│   ├── gatsby-browser.js
+│   ├── gatsby-config
+│   ├── jest.config.js
+│   ├── LICENSE
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
 ```
