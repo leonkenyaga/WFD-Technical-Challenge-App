@@ -61,5 +61,50 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 
    Your site should now be running at <http://localhost:8000>
 
+## File Structure
 
+├── .cache
+├── coverage
+├── public
+├── src
+│   ├── components
+│   │   ├── __tests__
+│   │   ├── Charts.js
+│   │   ├── Code.js
+│   │   ├── CodeEditor.js
+│   │   ├── Documentation.js
+│   │   ├── Footer.js
+│   │   ├── Forms.js
+│   │   ├── Navbar.js
+│   │   ├── Preloader.js
+│   │   ├── Progress.js
+│   │   ├── ScrollToTop.js
+│   │   ├── Sidebar.js
+│   │   ├── Tables.js
+│   │   └── Widgets.js
+│   ├── data
+│   │   ├── charts.js
+│   │   ├── commands.js
+│   │   ├── features.js
+│   │   ├── notifications.js
+│   │   ├── pages.js
+│   │   ├── tables.js
+│   │   ├── teamMembers.js
+│   │   └── transactions.js
+│   ├── index.js
+│   ├── pages
+│   │   ├── HomePage.js
+│   │   ├── Presentation.js
+│   │   ├── Settings.js
+│   │   ├── Transactions.js
+│   │   ├── components
+│   │   ├── dashboard
+│   │   ├── documentation
+│   │   ├── examples
+│   │   └── tables
+│   ├── routes.js
+│   └── scss
+│       ├── volt
+│       └── volt.scss
+└── yarn.lock
 
