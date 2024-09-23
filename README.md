@@ -207,11 +207,13 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 **Most Popular Celebs**
 
 *Mobile View*
+
 ![CelebsMobile](https://github.com/user-attachments/assets/c81db744-0da4-4d7c-9f74-ec7cfa869f44)
 
 
 
 *Tablet View*
+
 ![CelebsTablet](https://github.com/user-attachments/assets/b26556d1-2444-477a-b6df-cae6db2a5943)
 
 
@@ -225,10 +227,55 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 **Celeb Modal**
 
 *Mobile View*
-![CelebsMobile](https://github.com/user-attachments/assets/10cf79b8-88ec-4605-a93f-45a7bef6ce59)
+
+![ModalMobile](https://github.com/user-attachments/assets/3901cd56-28f6-4c24-babf-79fde0b87e28)
+
 
 
 *Tablet View*
 
+![ModalTablet](https://github.com/user-attachments/assets/68dc62d5-766f-4b66-af61-f33fd89d7729)
+
+
+*Desktop View*
+
+![ModalDesktop](https://github.com/user-attachments/assets/26b54488-60cf-4fa7-a8e8-a41d142c872c)
+
+
+**Ideas**
+
+*Mobile View*
+
+![IdeasMobileView](https://github.com/user-attachments/assets/e2cdb581-f099-4679-9537-26c9f479140d)
+
+
+*Tablet View*
+
+![IdeasTabletView](https://github.com/user-attachments/assets/2ca9e113-0ec5-4577-927c-c2cbe9ae9886)
+
+
+
+
+*Desktop View*
+
+![IdeasDesktopView](https://github.com/user-attachments/assets/1f31704c-a800-4f8f-80d1-45b9865de188)
+
+
+**Interests and Footer**
+
+*Mobile View*
+
+![InterestsMobile](https://github.com/user-attachments/assets/1b8d0beb-8b76-4036-986a-7cb79689e72e)
+
+
+
+*Tablet View*
+
+![InterestsTabletView](https://github.com/user-attachments/assets/a4001cb4-a78a-46b2-9bf9-7514a3fd7eef)
+
+
+*Desktop View*
+
+![InterestsDesktopView](https://github.com/user-attachments/assets/85da9db3-eb69-4237-99c6-e8ced43a297e)
 
 
