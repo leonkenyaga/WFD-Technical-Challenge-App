@@ -50,8 +50,6 @@ You will need a new or existing [Contentful space][] to use this starter and wil
    cd my-app
    ```
 
-   This will run a script to populate your Contentful space's content model and add demo content.
-
 1. **Start developing**
 
    In your site directory, start the development server:
