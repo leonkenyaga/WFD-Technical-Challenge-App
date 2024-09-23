@@ -495,6 +495,8 @@ The following steps can be taken to optimize the applications performance:
 
 **Note: Google Tag Manager** : Google Tag manager significantly reduces an application's speed because it loads a script in the applications main thread. To try and reduce the effects set a trigger in you tag that delays the loading of your script by some time ideally 3000ms and set the limit to 1 so that it only loads once. 
 
+Meanwhile **gatsby-plugin-google-tagmanager-delayed**, a fork of gatsby-plugin-google-tagmanager aims to solve Google Tag Manager performance headache by delaying loading of GTM by placing it at the end of body and adding a half-second delay. However, it's objectives have not yet been achieved.
+
 To demonstrate this effects I have two versions of the application deployed, **one with Google Tag Manager and one without Google Tag manager**, check the lighthouse page speed insights below:
 
 ## Lighthouse Report
