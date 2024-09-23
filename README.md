@@ -7,8 +7,22 @@ This project is a demonstration project showcasing the seamless integration betw
 
 ## Table of Contents
 
+* [Technologies](#technologies)
 * [Architecture](#architecture)
 * [Quickstart](#quickstart)
+* [File Structure](#filestructure)
+* [Components](#components)
+* [Data Fetching](#data fetching)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Optimization](#optimization)
+* [Lighthouse Report](#lighthousesupport)
+* [Browser Support](#browsersupport)
+## Technologies 
+
+- React
+- Gatsby
+- Contentful Headless CMS
 
 ## Architecture
 
@@ -497,7 +511,7 @@ The following steps can be taken to optimize the applications performance:
 
 Meanwhile **gatsby-plugin-google-tagmanager-delayed**, a fork of gatsby-plugin-google-tagmanager aims to solve Google Tag Manager performance headache by delaying loading of GTM by placing it at the end of body and adding a half-second delay. However, it's objectives have not yet been achieved.
 
-To demonstrate this effects I have two versions of the application deployed, **one with Google Tag Manager and one without Google Tag manager**, check the lighthouse page speed insights below:
+To demonstrate this effects I have two versions of the application deployed, **one with Google Tag Manager and one without Google Tag manager**, check their lighthouse page speed insights below:
 
 ## Lighthouse Report
 
@@ -513,7 +527,6 @@ To demonstrate this effects I have two versions of the application deployed, **o
 
 *Mobile*:https://taupe-belekoy-b83f35.netlify.app/
 
-## Browser Support
 
 ## Browser Support
 
