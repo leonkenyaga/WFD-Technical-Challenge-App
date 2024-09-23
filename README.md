@@ -12,11 +12,11 @@ This project is a demonstration project showcasing the seamless integration betw
 * [Quickstart](#quickstart)
 * [File Structure](#filestructure)
 * [Components](#components)
-* [Data Fetching](#data fetching)
+* [Data Fetching](#datafetching)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Optimization](#optimization)
-* [Lighthouse Report](#lighthousesupport)
+* [Lighthouse Report](#lighthousereport)
 * [Browser Support](#browsersupport)
 ## Technologies 
 
