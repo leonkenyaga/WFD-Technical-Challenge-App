@@ -335,11 +335,11 @@ The ```CelebModal``` component has the following subcomponents:
 
 The ```Ideas``` component has the following subcomponents:
 
-   1. *Idea* : The ```Idea``` component takes the following props:
+1. *Idea* : The ```Idea``` component takes the following props:
     
-             - idea: name of the idea
+- ```idea```: name of the idea
 
-             - imgUrl: url as the source of the background image for the idea pitch
+- ```imgUrl```: url as the source of the background image for the idea pitch
 
 *Mobile View*
 
