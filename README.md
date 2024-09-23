@@ -493,15 +493,28 @@ The following steps can be taken to optimize the applications performance:
 
 **Use gatsby-image plugin**: This plugin automatically optimizes images for different screen sizes and densities
 
-**Note: Google Tag Manager** : Google Tag manager significantly reduces an application's speed because it loads a script in the applications main thread. To try and reduce the effects set a trigger in you tag that delays the loading of your script by some time ideally 3000ms. 
+**Note: Google Tag Manager** : Google Tag manager significantly reduces an application's speed because it loads a script in the applications main thread. To try and reduce the effects set a trigger in you tag that delays the loading of your script by some time ideally 3000ms and set the limit to 1 so that it only loads once. 
 
-To demonstrate this effects I have two versions of the application deployed, **one with Google Tag Mnager and one without Google Tag manager**, check the lighthouse page speed insights below:
+To demonstrate this effects I have two versions of the application deployed, **one with Google Tag Manager and one without Google Tag manager**, check the lighthouse page speed insights below:
 
 ## Lighthouse Report
 
 **Without Google Tag Manager**
+
 *Desktop*:https://comfy-piroshki-651737.netlify.app/
+
 *Mobile*: https://comforting-youtiao-570836.netlify.app/
+
 **With Google Tag Manager**
+
 *Desktop*: https://clever-semolina-e1549a.netlify.app/
+
 *Mobile*:https://taupe-belekoy-b83f35.netlify.app/
+
+## Browser Support
+
+## Browser Support
+
+At present, this project supports the following browsers:
+
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
