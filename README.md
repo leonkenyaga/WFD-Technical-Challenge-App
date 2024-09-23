@@ -9,15 +9,15 @@ This project is a demonstration project showcasing the seamless integration betw
 
 * [Technologies](#technologies)
 * [Architecture](#architecture)
-* [Quickstart](#quickstart)
-* [File Structure](#filestructure)
+* [Quick Start](#quick-start)
+* [File Structure](#file-structure)
 * [Components](#components)
-* [Data Fetching](#datafetching)
+* [Data Fetching](#data-fetching)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Optimization](#optimization)
-* [Lighthouse Report](#lighthousereport)
-* [Browser Support](#browsersupport)
+* [Lighthouse Report](#lighthouse-report)
+* [Browser Support](#browser-support)
 ## Technologies 
 
 - React
