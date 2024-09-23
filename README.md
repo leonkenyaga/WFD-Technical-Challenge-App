@@ -211,11 +211,11 @@ Ten pass the image into the BackgroundImage component:
 ```
 2. *DreamshareButton* : The ```DreamshareButton``` component is a shared component among other components in the project. It takes the following props:
  
-        *```type```: this dictates the type of the button e.g "submit"
+        *type: this dictates the type of the button e.g "submit"
      
-        *```onClick```: this dictates the function that executes when the button is clicked
+        *onClick: this dictates the function that executes when the button is clicked
    
-        *```childeren```: use the button to wrap text that you wish to display in the button
+        *children: use the button to wrap text that you wish to display in the button
 
 *Desktop View*
 
@@ -233,11 +233,11 @@ Ten pass the image into the BackgroundImage component:
 The ```MostPopularMovies``` component has the following subcomponents:
  1. *Movie* : It takes the following props:
     
-           *```image```: Has to be in the format of IGatsbyImageData
+           *image: Has to be in the format of IGatsbyImageData
     
-           *```name```: text that signifies the name of the movie
+           *name: text that signifies the name of the movie
     
-           *```description```: text that signifies the description of the movie
+           *description: text that signifies the description of the movie
     
   2. A "Loadmore" button using ```DreamshareButton``` that triggers rendering of more movies   
 
@@ -263,15 +263,15 @@ The ```MostPopularCelebs``` component has the following subcomponents:
 
  1. *Celeb Profile* : It takes the following props:
     
-           *```image```: Has to be in the format of IGatsbyImageData
+           *image: Has to be in the format of IGatsbyImageData
     
-           *```name```: text that signifies the name of the celeb
+           *name: text that signifies the name of the celeb
     
-           *```description```: text that signifies the description of the celeb
+           *description: text that signifies the description of the celeb
 
-           *```icon```: text that signifies the icon of the celeb
+           *icon: text that signifies the icon of the celeb
 
-           *```iconColor```: text that signifies the icon color of the celeb
+           *iconColor: text that signifies the icon color of the celeb
     
  2. A "See more celebs" button using ```DreamshareButton``` that triggers the rendering of the ```CelebModal``` component             
 
@@ -323,9 +323,9 @@ The ```Ideas``` component has the following subcomponents:
 
    1. *Idea* : The ```Idea``` button component takes the following props:
     
-             *```idea```: name of the idea
+             *idea: name of the idea
 
-             *```imgUrl```: url as the source of the background image for the idea pitch
+             *imgUrl: url as the source of the background image for the idea pitch
 
 *Mobile View*
 
