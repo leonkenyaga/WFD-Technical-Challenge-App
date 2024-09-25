@@ -247,7 +247,7 @@ Then pass the image into the BackgroundImage component:
 **Most Popular Movies**
 
 The ```MostPopularMovies``` component has the following subcomponents:
-1. *Movie* : It takes the following props:
+1. ```Movie``` : It takes the following props:
     
 - ```image```: Has to be in the format of ```IGatsbyImageData```
     
