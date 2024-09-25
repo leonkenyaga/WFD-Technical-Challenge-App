@@ -278,7 +278,7 @@ The ```MostPopularMovies``` component has the following subcomponents:
 
 The ```MostPopularCelebs``` component has the following subcomponents:
 
-1. *Celeb Profile* : It takes the following props:
+1. ```Celeb Profile``` : It takes the following props:
     
 - ```image```: Has to be in the format of ```IGatsbyImageData```
     
