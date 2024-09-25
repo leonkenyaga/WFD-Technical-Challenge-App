@@ -493,6 +493,7 @@ describe('MostPopularMovies', () => {
 
 ```
 To run the projects unit tests: ```npm run test:unit```
+
 To get test coverage: ```npm run test:unit:coverage```
 
 ## Deployment
