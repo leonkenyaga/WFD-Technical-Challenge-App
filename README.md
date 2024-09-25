@@ -186,6 +186,7 @@ You will need a new or existing [Contentful space][] to use this starter and wil
 ## Components
 
 **Header**
+
 The ```Header``` component includes the following sub-components:
 
 1. ```BackgroundImage```: provides optimized size and loading courtesy of gatsby-background-image plugin. However for recent versions of gatsby v3 and above BackgroundImage requres gbimage-bridge plugin to convert images to ```IGatsbyImageData``` into background image format.
@@ -244,6 +245,7 @@ Then pass the image into the BackgroundImage component:
 ![HeaderComponentTablet](https://github.com/user-attachments/assets/b6d94a1f-c0dd-4ad3-95d0-68d55a7376ff)
 
 **Most Popular Movies**
+
 The ```MostPopularMovies``` component has the following subcomponents:
 1. *Movie* : It takes the following props:
     
@@ -273,6 +275,7 @@ The ```MostPopularMovies``` component has the following subcomponents:
 
 
 **Most Popular Celebs**
+
 The ```MostPopularCelebs``` component has the following subcomponents:
 
 1. *Celeb Profile* : It takes the following props:
@@ -361,6 +364,7 @@ The ```Ideas``` component has the following subcomponents:
 
 
 **Interests**
+
 The ```Ideas``` component has the following subcomponents:
 
 1. An ```input``` field
