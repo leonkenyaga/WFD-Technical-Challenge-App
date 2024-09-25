@@ -223,7 +223,7 @@ Then pass the image into the BackgroundImage component:
 ```
 <BackgroundImage {...bgImage} > Content goes here </BackgroundImage>
 ```
-2. *DreamshareButton* : The ```DreamshareButton``` component is a shared component among other components in the project. It takes the following props:
+2. ```DreamshareButton``` : The ```DreamshareButton``` component is a shared component among other components in the project. It takes the following props:
  
 - ```type```: this dictates the type of the button e.g "submit"
      
