@@ -506,7 +506,7 @@ The following steps can be taken to optimize the applications performance:
 
 **Lazy loading**: only load images that are monted on the viewport, this optimizes the applications speed by reducing the **First Contentful Paint**
 
-**Code-Splitting**: load and hydrate components that take longer to load independently from teh rest of the application
+**Code-Splitting**: load and hydrate components that take longer to load independently from the rest of the application
 
 **Use gatsby-image plugin**: This plugin automatically optimizes images for different screen sizes and densities
 
